@@ -15,7 +15,8 @@ is_not_setup() {
 }
 
 setup() {
-  ln -sf configs/.ssh/config.d/github ~/.ssh/config.d/github
+  ln -sf $(pwd)/configs/.ssh/config.d/github ~/.ssh/config.d/github
+  cat $(pwd)/configs/.ssh/config.d/github >> ~/.ssh/config
   echo -e 'y\n' | ssh-keygen -t rsa -b 4096 -C "$user_email" -N "" -f ~/.ssh/github_id_rsa -q
 
   cat ~/.ssh/github_id_rsa.pub | pbcopy

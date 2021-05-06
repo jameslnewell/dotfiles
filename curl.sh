@@ -4,8 +4,16 @@ source ./utilities/boot.sh
 
 repo_directory=~/code/jameslnewell/dotfiles
 
-mkdir -p $repo_directory
-git clone https://github.com/jameslnewell/dotfiles.git $repo_directory 
+
+if [[ -d $repo_directory ]]; then 
+  cd $repo_directory
+  git checkout main
+  git pull
+else 
+  mkdir -p $repo_directory
+  git clone https://github.com/jameslnewell/dotfiles.git $repo_directory 
+  cd $repo_directory 
+fi
 
 $repo_directory/main.sh
 
