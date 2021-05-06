@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-set -e
 
-source scripts/utils.sh
+cd "$(dirname "$0")"
 
-./scripts/xcode.sh
-# ./scripts/brew.sh
-./scripts/shell.sh
+source ./utilities/boot.sh
+
+./scripts/ssh.sh
+./scripts/git.sh
+./scripts/github.sh

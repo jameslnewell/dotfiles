@@ -15,7 +15,7 @@
 ## Installation
 
 ```bash
-bash -c "$(curl -LsS https://raw.github.com/jameslnewell/dotfiles/main/scripts/main.sh)"
+bash -c "$(curl -LsS https://raw.github.com/jameslnewell/dotfiles/main/curl.sh)"
 ```
 
 ## Features
