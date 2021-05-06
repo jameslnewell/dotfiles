@@ -1,3 +1,3 @@
 
-user_name=James Newell
-user_email=james@jameslnewell.dev
+user_name="James Newell"
+user_email="james@jameslnewell.dev"

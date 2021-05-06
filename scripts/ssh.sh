@@ -16,7 +16,7 @@ is_not_setup() {
 setup() {
   mkdir -p ~/.ssh
   mkdir -p ~/.ssh/config.d
-  ln -sf configs/.ssh/config ~/.ssh/config
+  ln -sf $(pwd)/configs/.ssh/config ~/.ssh/config
 
   chmod 700 ~/.ssh
   chmod 700 ~/.ssh/config.d
