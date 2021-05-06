@@ -1,0 +1,7 @@
+[user]
+  name = James Newell
+  email = james@jameslnewell.dev
+[pull]
+  rebase = true
+[init]
+  defaultBranch = main
