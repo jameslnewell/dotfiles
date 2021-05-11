@@ -10,3 +10,6 @@ source ./utilities/boot.sh
 ./scripts/git.sh
 ./scripts/github.sh
 ./scripts/shell.sh
+./scripts/terminal.sh
+./scripts/nodejs.sh
+./scripts/os.sh
