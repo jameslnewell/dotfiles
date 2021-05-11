@@ -12,4 +12,5 @@ source ./utilities/boot.sh
 ./scripts/shell.sh
 ./scripts/terminal.sh
 ./scripts/nodejs.sh
+./scripts/vscode.sh
 ./scripts/os.sh

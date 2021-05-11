@@ -9,6 +9,7 @@ print_section_header $section_name
 
 # remove unnecessary dock icons
 brew install dockutil
+dockutil --remove 'Launchpad'
 dockutil --remove 'Messages'
 dockutil --remove 'Mail'
 dockutil --remove 'Maps'
