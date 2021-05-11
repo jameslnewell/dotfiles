@@ -7,7 +7,7 @@ source ./utilities/os.sh
 section_name=brew
 
 is_not_setup() {
-  cmd_exists brew
+  ! cmd_exists brew
 }
 
 setup() {
