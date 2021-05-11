@@ -14,6 +14,8 @@ fish_path="$(which fish)"
 echo $fish_path | sudo tee -a /etc/shells
 chsh -s $fish_path
 
+mkdir -p ~/.config/fish/conf.d
+
 # install prompt
 brew install starship
 cp ./configs/.config/fish/conf.d/starship.fish ~/.config/fish/conf.d/starship.fish
