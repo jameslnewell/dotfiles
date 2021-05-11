@@ -28,6 +28,16 @@ dockutil --remove 'Numbers'
 dockutil --remove 'Pages'
 dockutil --remove 'App Store'
 
+# automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# enable automatic updates
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+
+# install Moom
+brew install mas
+mas install 419330170
+
 print_section_setup_complete
 
 print_section_footer $section_name 

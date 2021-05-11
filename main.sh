@@ -4,6 +4,8 @@ cd "$(dirname "$0")"
 
 source ./utilities/boot.sh
 
+sudo -v
+
 ./scripts/brew.sh
 ./scripts/1password.sh
 ./scripts/ssh.sh
@@ -14,3 +16,4 @@ source ./utilities/boot.sh
 ./scripts/nodejs.sh
 ./scripts/vscode.sh
 ./scripts/os.sh
+./scripts/xcode.sh
