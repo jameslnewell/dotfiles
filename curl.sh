@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
+set -e
 
 repo_directory=~/code/jameslnewell/dotfiles
-
 
 if [[ -d $repo_directory ]]; then 
   cd $repo_directory
