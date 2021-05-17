@@ -3,7 +3,6 @@ press_any_key_to_continue() {
   read -p "Press any key to contine." -n 1
 }
 
-
 # Prompts the user to answer a question with either y or n
 prompt() {
   local message=$1

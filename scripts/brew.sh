@@ -13,7 +13,6 @@ is_not_setup() {
 setup() {
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   cp ./configs/.config/fish/conf.d/brew.fish ~/.config/fish/conf.d/brew.fish
-
 }
 
 print_section_header $section_name

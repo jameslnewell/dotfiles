@@ -7,12 +7,8 @@ is_xcode_installed() {
 }
 
 install_xcode() {
-  if ! is_xcode_installed; then
-    open "macappstores://itunes.apple.com/en/app/xcode/id497799835"
-    until is_xcode_installed; do \
-      sleep 5; \
-    done
-  fi
+  brew install mas
+  mas install 497799835
 }
 
 is_command_line_tools_installed() {
