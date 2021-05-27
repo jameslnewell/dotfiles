@@ -6,10 +6,10 @@ source ./utilities/boot.sh
 
 sudo -v
 
-./scripts/os.sh
 # needed to install brew
 ./scripts/xcode.sh
 ./scripts/brew.sh
+./scripts/os.sh
 # needed to login to github and upload SSH
 ./scripts/1password.sh
 ./scripts/ssh.sh

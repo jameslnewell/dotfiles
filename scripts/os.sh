@@ -29,10 +29,13 @@ dockutil --remove 'Pages'
 dockutil --remove 'App Store'
 
 # automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -int 1
+
+# make fn keys as standard keys instead of media
+defaults write -g com.apple.keyboard.fnState -int 1
 
 # enable automatic updates
-defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -int 1
 
 # enable right click
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
