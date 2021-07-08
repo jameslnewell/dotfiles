@@ -1,0 +1,41 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "debug.node.autoAttach": "on",
+  "editor.rulers": [
+    80
+  ],
+  "editor.linkedEditing": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.options": {
+    "rules": {
+      "prettier/prettier": [
+        "warn"
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        "warn"
+      ],
+      "simple-import-sort/sort": [
+        "warn"
+      ]
+    }
+  },
+  "window.zoomLevel": 1,
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off"
+}

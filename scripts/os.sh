@@ -44,7 +44,12 @@ defaults write -g com.apple.keyboard.fnState -int 1
 # sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -int 1
 
 # enable right click
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse "save.MouseButtonMode.v1" -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string "TwoButton"
+
+# use fn keys instead of special keys
+defaults write -g com.apple.keyboard.fnState -bool true
 
 # enable developer menu in safari
 defaults write com.apple.Safari WebKitDeveloperExtras -bool true 
