@@ -4,6 +4,10 @@ set -e
 
 repo_directory=~/code/jameslnewell/dotfiles
 
+# macos will prompt to install git when first called
+# force the prompt to show now before creating the directory
+check=$(git version)
+
 if [[ -d $repo_directory ]]; then 
   cd $repo_directory
   git checkout main
