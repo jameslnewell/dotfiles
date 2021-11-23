@@ -7,16 +7,17 @@ section_name=node
 
 print_section_header $section_name
 
-# install nvm
+# install fnm
 brew install fnm
 cp ./configs/.config/fish/conf.d/fnm.fish ~/.config/fish/conf.d/fnm.fish
+source ~/.config/fish
 
 # install node
-fnm install 14
-fnm default 14
+fnm install 16
+fnm default 16
 
 # install yarn
-npm -g install yarn
+brew install yarn
 
 print_section_setup_complete
 

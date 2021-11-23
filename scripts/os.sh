@@ -43,6 +43,15 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode T
 # enable developer menu in safari
 defaults write com.apple.Safari WebKitDeveloperExtras -bool true 
 
+# Enable Safari’s debug menu
+# defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+# defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+
 print_section_setup_complete
 
 print_section_footer $section_name 

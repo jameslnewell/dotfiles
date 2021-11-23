@@ -13,6 +13,7 @@ mas install 497799835
 
 # accept command line tools license agreement
 xcodebuild -license accept
+# xcode-select --install
 
 print_section_setup_complete
 

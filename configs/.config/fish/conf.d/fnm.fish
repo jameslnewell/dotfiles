@@ -1,1 +1,1 @@
-set PATH /usr/local/bin $PATH
+fnm env | source

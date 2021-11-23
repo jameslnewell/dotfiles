@@ -18,7 +18,10 @@ mkdir -p ~/.config/fish/conf.d
 
 # install prompt
 brew install starship
+
 cp ./configs/.config/fish/conf.d/starship.fish ~/.config/fish/conf.d/starship.fish
+cp ./configs/.config/fish/conf.d/brew.fish ~/.config/fish/conf.d/brew.fish
+cp ./configs/.config/fish/conf.d/vscode.fish ~/.config/fish/conf.d/vscode.fish
 
 print_section_setup_complete
 

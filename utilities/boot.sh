@@ -1,2 +1,2 @@
 
-set -e
+set -eux

@@ -7,9 +7,11 @@ source ./utilities/data.sh
 brew install dockutil
 
 brew install --cask google-chrome
+# TODO: continue on failure 👇
 dockutil --add "/Applications/Google Chrome.app"
 
 brew install --cask slack
+# TODO: continue on failure 👇
 dockutil --add "/Applications/Slack.app"
 
 brew install --cask spotify

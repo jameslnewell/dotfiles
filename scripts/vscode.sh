@@ -16,9 +16,6 @@ fi
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
-# install CLI
-cp ./configs/.config/fish/conf.d/vscode.fish ~/.config/fish/conf.d/vscode.fish
-
 # install extensions
 code --install-extension editorconfig.editorconfig --force
 code --install-extension dracula-theme.theme-dracula --force
