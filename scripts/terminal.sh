@@ -8,6 +8,8 @@ section_name=terminal
 print_section_header $section_name
 
 brew install --cask iterm2
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code-nerd-font
 
 # install the theme for iTerm
 defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string $(pwd)/configs/iterm2
