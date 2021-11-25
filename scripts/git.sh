@@ -14,8 +14,8 @@ is_not_setup() {
 }
 
 setup() {
-  ln -sf $(pwd)/configs/.gitconfig ~/.gitconfig
-  ln -sf $(pwd)/configs/.gitignore ~/.gitignore
+  ln -sf "$(pwd)/files/.gitconfig" ~/.gitconfig
+  ln -sf "$(pwd)/files/.gitignore" ~/.gitignore
 }
 
 print_section_header $section_name

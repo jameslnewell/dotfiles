@@ -14,20 +14,13 @@ is_not_setup() {
 }
 
 setup() {
+  # create the SSH directory and include any files
   mkdir -p ~/.ssh
-  mkdir -p ~/.ssh/config.d
-
-  # Include directives don't work so we're concatting atm
-  # ln -sf $(pwd)/configs/.ssh/config ~/.ssh/config
-  cat $(pwd)/configs/.ssh/config > ~/.ssh/config
-
   chmod 700 ~/.ssh
-  chmod 700 ~/.ssh/config.d
+  mkdir -p ~/.ssh/conf.d
+  chmod 700 ~/.ssh/conf.d
+  ln -sf "$(pwd)/files/.ssh/config" ~/.ssh/config
   chmod 600 ~/.ssh/config
-
-  # v7 required for "Include" directives
-  # brew install openssh
-
 }
 
 print_section_header $section_name

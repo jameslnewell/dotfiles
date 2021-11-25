@@ -13,6 +13,7 @@ if [ ! -d app_path ]; then
   brew install --cask visual-studio-code
 fi
 
+# TODO: handle failure if already installed
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
@@ -27,8 +28,8 @@ code --install-extension vscodevim.vim --force
 code --install-extension bmalehorn.vscode-fish --force
 
 # configure vscode
-ln -sf $(pwd)/configs/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf $(pwd)/configs/Library/Application\ Support/Code/User/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf $(pwd)/files/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf $(pwd)/files/Library/Application\ Support/Code/User/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 # add dock icon
 brew install dockutil

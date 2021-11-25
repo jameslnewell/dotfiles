@@ -9,8 +9,8 @@ print_section_header $section_name
 
 # install fnm
 brew install fnm
-cp ./configs/.config/fish/conf.d/fnm.fish ~/.config/fish/conf.d/fnm.fish
-source ~/.config/fish
+cp ./files/.config/fish/conf.d/fnm.fish ~/.config/fish/conf.d/fnm.fish
+source ~/.config/fish/config.fish
 
 # install node
 fnm install 16

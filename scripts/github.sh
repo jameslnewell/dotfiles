@@ -7,7 +7,7 @@ source ./utilities/data.sh
 section_name=github
 
 is_not_setup() {
-  if [[ -f ~/.ssh/config.d/github || -h ~/.ssh/config.d/github || -f ~/.ssh/github_id_rsa ]]; then
+  if [[ -f ~/.ssh/conf.d/github || -h ~/.ssh/conf.d/github || -f ~/.ssh/github_id_rsa ]]; then
     return 1
   else 
     return 0
@@ -15,15 +15,13 @@ is_not_setup() {
 }
 
 setup() {
-  ln -sf $(pwd)/configs/.ssh/config.d/github ~/.ssh/config.d/github
-  cat $(pwd)/configs/.ssh/config.d/github >> ~/.ssh/config
-  ln -sf $(pwd)/configs/.ssh/config.d/gitlab ~/.ssh/config.d/gitlab
-  cat $(pwd)/configs/.ssh/config.d/gitlab >> ~/.ssh/config
+  ln -sf "$(pwd)/files/.ssh/conf.d/github" ~/.ssh/conf.d/github
   echo -e 'y\n' | ssh-keygen -t rsa -b 4096 -C "$user_email" -N "" -f ~/.ssh/github_id_rsa -q
 
-  cat ~/.ssh/github_id_rsa.pub | pbcopy
+  pbcopy < ~/.ssh/github_id_rsa.pub
   echo ""
   echo "The public key has been copied to the clipboard. Please paste it into Github."
+  open https://github.com/settings/keys
   press_any_key_to_continue
 }
 

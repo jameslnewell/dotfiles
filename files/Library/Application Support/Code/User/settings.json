@@ -18,5 +18,8 @@
   },
 
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+"javascript.updateImportsOnFileMove.enabled": "always",
+"[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+}
 }

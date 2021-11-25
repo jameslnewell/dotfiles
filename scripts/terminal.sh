@@ -12,7 +12,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
 
 # install the theme for iTerm
-defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string $(pwd)/configs/iterm2
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string $(pwd)/files/iterm2
 defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
 
 # add dock icon

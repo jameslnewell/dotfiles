@@ -9,7 +9,7 @@ sudo -v
 ./scripts/brew.sh
 ./scripts/xcode.sh
 ./scripts/os.sh
-./scripts/1password.sh
+#./scripts/1password.sh
 # needed to login to github and upload SSH
 ./scripts/ssh.sh
 ./scripts/git.sh
