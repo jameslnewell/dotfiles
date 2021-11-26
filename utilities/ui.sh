@@ -1,6 +1,7 @@
+#!/usr/bin/env bash
 
 press_any_key_to_continue() {
-  read -p "Press any key to contine." -n 1
+  read -rp "Press any key to contine." -n 1
 }
 
 # Prompts the user to answer a question with either y or n
@@ -8,7 +9,7 @@ prompt() {
   local message=$1
   while true; do
       echo ""
-      read -p "$message " yn
+      read -rp "$message " yn
       case $yn in
           [Yy]* ) return 0; break;;
           [Nn]* ) return 1; break;;
@@ -22,19 +23,18 @@ prompt_overwrite_existing_setup() {
   prompt "Overwrite the existing setup?"
 }
 
-print_section_header() {
-  local section_name=$1
+print_script_header() {
   echo ""
-  echo "$section_name"
+  echo "$script_name"
   echo "---"
 }
 
-print_section_setup_complete() {
+print_script_setup() {
   echo ""
   echo "Setup complete."
 }
 
-print_section_footer() {
+print_script_footer() {
   # noop
   echo ""
 }

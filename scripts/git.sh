@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=git
+script_name=git
 
 is_not_setup() {
   if [[ -f ~/.gitconfig || -h ~/.gitconfig || -f ~/.gitignore || -h ~/.gitignore ]]; then
@@ -18,12 +18,12 @@ setup() {
   ln -sf "$(pwd)/files/.gitignore" ~/.gitignore
 }
 
-print_section_header $section_name
+print_script_header $script_name
 
 if is_not_setup || prompt_overwrite_existing_setup; then
   setup
-  print_section_setup_complete
+  print_script_setup
 fi
 
-print_section_footer $section_name 
+print_script_footer $script_name 
 

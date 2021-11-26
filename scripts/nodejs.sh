@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=node
+script_name=node
 
-print_section_header $section_name
+print_script_header $script_name
 
 # install fnm
 brew install fnm
@@ -19,7 +19,7 @@ fnm default 16
 # install yarn
 brew install yarn
 
-print_section_setup_complete
+print_script_setup
 
-print_section_footer $section_name 
+print_script_footer $script_name 
 

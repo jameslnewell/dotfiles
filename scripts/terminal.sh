@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=terminal
+script_name=terminal
 
-print_section_header $section_name
+print_script_header $script_name
 
 brew install --cask iterm2
 brew tap homebrew/cask-fonts
@@ -19,6 +19,6 @@ defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
 brew install dockutil
 dockutil --add /Applications/iTerm.app
 
-print_section_setup_complete
+print_script_setup
 
-print_section_footer $section_name 
+print_script_footer $script_name 

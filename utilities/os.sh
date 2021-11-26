@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 cmd_exists() {
   cmd=$1

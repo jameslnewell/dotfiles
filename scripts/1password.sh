@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=1password
+script_name=1password
 
-print_section_header $section_name
+print_script_header $script_name
 
 brew install --cask 1password
-print_section_setup_complete
+print_script_setup
 
-print_section_footer $section_name 
+print_script_footer $script_name 
 

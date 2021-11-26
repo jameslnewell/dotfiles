@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=ssh
+script_name=ssh
 
 is_not_setup() {
   if [[ -f ~/.ssh/config || -h ~/.ssh/config ]]; then
@@ -23,12 +23,12 @@ setup() {
   chmod 600 ~/.ssh/config
 }
 
-print_section_header $section_name
+print_script_header $script_name
 
 if is_not_setup || prompt_overwrite_existing_setup; then
   setup
-  print_section_setup_complete
+  print_script_setup
 fi
 
-print_section_footer $section_name 
+print_script_footer $script_name 
 

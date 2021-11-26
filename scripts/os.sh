@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=os
+script_name=os
 
-print_section_header $section_name
+print_script_header $script_name
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -126,6 +126,6 @@ defaults write com.apple.commerce AutoUpdate -bool true
 # Allow the App Store to reboot machine on macOS updates
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
-print_section_setup_complete
+print_script_setup
 
-print_section_footer $section_name 
+print_script_footer $script_name 

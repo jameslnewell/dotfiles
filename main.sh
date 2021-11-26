@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")"
-
-source ./utilities/boot.sh
-
-sudo -v
+# change the working directory to be the dotfiles directory
+cd "$(dirname "$0")" || exit 1
 
 ./scripts/brew.sh
 ./scripts/xcode.sh

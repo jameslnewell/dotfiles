@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
-source ./utilities/os.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=brew
+script_name=brew
 
 is_not_setup() {
   ! brew -v
@@ -14,12 +13,12 @@ setup() {
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
-print_section_header $section_name
+print_script_header $script_name
 
 if is_not_setup || prompt_overwrite_existing_setup; then
   setup
-  print_section_setup_complete
+  print_script_setup
 fi
 
-print_section_footer $section_name 
+print_script_footer $script_name 
 

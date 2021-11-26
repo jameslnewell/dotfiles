@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=vscode
+script_name=vscode
 
-print_section_header $section_name
+print_script_header $script_name
 
 # install xcode
 brew install mas
@@ -15,6 +15,6 @@ mas install 497799835
 sudo xcodebuild -license accept
 # xcode-select --install
 
-print_section_setup_complete
+print_script_setup
 
-print_section_footer $section_name 
+print_script_footer $script_name 

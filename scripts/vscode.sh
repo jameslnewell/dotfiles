@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-source ./utilities/boot.sh
-source ./utilities/ui.sh
+# shellcheck source=../utilities/__.sh
+source ./utilities/__.sh
 
-section_name=vscode
+script_name=vscode
 
 app_path="/Applications/Visual Studio Code.app"
 
-print_section_header $section_name
+print_script_header $script_name
 
 if [ ! -d app_path ]; then
   brew install --cask visual-studio-code
@@ -35,6 +35,6 @@ ln -sf $(pwd)/files/Library/Application\ Support/Code/User/keybindings.json ~/Li
 brew install dockutil
 dockutil --add "$app_path"
 
-print_section_setup_complete
+print_script_setup
 
-print_section_footer $section_name 
+print_script_footer $script_name 
