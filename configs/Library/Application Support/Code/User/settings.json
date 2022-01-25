@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Dracula",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -37,5 +37,16 @@
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "off"
+  "editor.wordWrap": "off",
+  "git.autofetch": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "file-icons",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
